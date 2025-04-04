@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3wqt6a0h4eei"]
+
+[ext_resource type="Texture2D" uid="uid://cr3td4kwfslbn" path="res://art/f6506692-8f6b-43a2-bf60-27b64f3a6fc3_removalai_preview.png" id="1_5xxkd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x5tby"]
+radius = 192.0
+height = 646.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(152.5, 165.5)
+scale = Vector2(0.382591, 0.448333)
+texture = ExtResource("1_5xxkd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sprite"]
+position = Vector2(44, -23)
+shape = SubResource("CapsuleShape2D_x5tby")
